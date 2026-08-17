@@ -1,10 +1,14 @@
-import { useState } from 'react'
 import SoundoroIcon from '../assets/SoundoroIcon.svg?react'
 import defaultAvatar from '../assets/default-avatar.jpg'
-import ColorPicker from '../ColorPicker/ColorPicker'
+import ColorPicker from '../components/ColorPicker/ColorPicker'
 import '../App.css'
 
-function Headbar() {
+interface HeadbarProps {
+    selectedColor: string
+    setSelectedColor: (color: string) => void
+}
+
+function Headbar({ selectedColor, setSelectedColor }: HeadbarProps) {
   return (
     <>
       <div id='top'>
@@ -17,7 +21,10 @@ function Headbar() {
                 <div id='headbar-usr-img'>
                   <img src={defaultAvatar} id="avatar"/>
                 </div>
-                <ColorPicker/>
+                <ColorPicker
+                  selectedColor={selectedColor}
+                  setSelectedColor={setSelectedColor}
+                />
               </div>
           </div>
       </div>

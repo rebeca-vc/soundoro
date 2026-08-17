@@ -1,8 +1,8 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   text-align: center;
-}
+} */
 
 .logo {
   height: 6em;
@@ -49,7 +49,6 @@
 
 .headbar-config{
   display: flex;
-  justify-content: left;
   align-items: center;
 }
 
@@ -81,6 +80,14 @@
 
 body {
   margin: 0;
-  min-height: 100vh;
-  background-color: #9B4747;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  background-color: var(--theme-color);
+}
+
+.global{
+  display: flex;
+  align-items: start;
+  justify-content: start;
 }
