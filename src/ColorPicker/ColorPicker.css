@@ -1,0 +1,11 @@
+#headbar-color-pick{
+  border-radius: 100%;
+  background-color: #812f2f;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+}
+
+#headbar-color-pick:hover{
+  background-color: #794242;
+}
