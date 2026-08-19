@@ -35,6 +35,7 @@
 
     border: none;
     border-radius: 50%;
+    border: 3px solid rgb(243, 203, 203);
 
     opacity: 0;
     transform: translateY(-40px) scale(0);

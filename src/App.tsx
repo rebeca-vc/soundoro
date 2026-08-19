@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import Headbar from './basics/Headbar'
 import MainTitle from './components/MainTitle/MainTitle'
+import Sound from './components/Sound/Sound'
+import Pomodoro from './components/Pomodoro/Pomodoro'
 
 import './App.css'
 
@@ -18,8 +20,15 @@ function App() {
               selectedColor={selectedColor}
               setSelectedColor={setSelectedColor}
           />
-        <MainTitle />
-
+        <div className='content'>
+            <MainTitle />
+            <div className='functions-base'>
+              <div className='functions'>
+                <Sound />
+                <Pomodoro />
+              </div>
+            </div>
+        </div>
     </div>
     </>
   )
