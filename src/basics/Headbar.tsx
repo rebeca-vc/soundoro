@@ -18,9 +18,9 @@ function Headbar({ selectedColor, setSelectedColor }: HeadbarProps) {
                 <div id='headbar-title'>
                   <p>Hello there!</p>
                 </div>
-                <div id='headbar-usr-img'>
+                {/* <div id='headbar-usr-img'>
                   <img src={defaultAvatar} id="avatar"/>
-                </div>
+                </div> */}
                 <ColorPicker
                   selectedColor={selectedColor}
                   setSelectedColor={setSelectedColor}

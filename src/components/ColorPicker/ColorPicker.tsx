@@ -6,7 +6,8 @@ const colors = [
     '#9B4747',
     '#55A05E',
     '#374570',
-    '#C19B3A'
+    '#C19B3A',
+    '#111111'
 ]
 
 interface ColorPickerProps {
